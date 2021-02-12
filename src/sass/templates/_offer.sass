@@ -1,0 +1,67 @@
+.offer
+    display: grid
+    grid-template-columns: minmax(100px, 360px) minmax(100px, 360px)  minmax(100px, 360px) 
+    grid-template-rows: 260px 180px
+    grid-template-areas: "offer__women offer__men offer__kids"  "offer__accesories offer__accesories offer__accesories"
+    align-items: center
+    justify-self: center
+    justify-content: center
+    grid-template:   ""
+    grid-gap: 30px
+    padding: 65px 5px 
+    &__women
+        display: grid
+        grid-area: offer__women
+        background: $black url("../img/women.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width: 100%
+        height: 100%
+        box-shadow: inset 360px 260px  rgba(33 , 22 ,  22, 0.7 )
+    &__men
+        display: grid
+        grid-area: offer__men
+        background: $black url("../img/men.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width: 100%
+        height: 100%
+        box-shadow: inset 360px 260px  rgba(33 , 22 ,  22, 0.7 )
+    &__kids
+        display: grid
+        grid-area: offer__kids
+        background: $black  url("../img/kids.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width: 100%
+        height: 100%
+        box-shadow: inset 360px 260px  rgba(33 , 22 ,  22, 0.7 )
+    &__accesories
+        display: grid
+        grid-area: offer__accesories
+        background: $black url("../img/accesories.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width: 100%
+        height: 100%
+        box-shadow: inset 360px 260px  rgba(33 , 22 ,  22, 0.7 )
+        
+    &__title
+        justify-self: center
+        align-self: center
+        text-align: center
+        line-height: 22px
+        font-size: 16px
+        color: $light-text
+        text-transform: uppercase
+        +regular
+        &_red
+            font-size: 24px
+            color: $red-text
+            line-height: 30px
+            +bold
+       

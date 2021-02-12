@@ -141,3 +141,69 @@ body {
       font-weight: 900; }
     .header__title_red {
       color: #F16D7F; }
+
+.offer {
+  display: grid;
+  grid-template-columns: minmax(100px, 360px) minmax(100px, 360px) minmax(100px, 360px);
+  grid-template-rows: 260px 180px;
+  grid-template-areas: "offer__women offer__men offer__kids"  "offer__accesories offer__accesories offer__accesories";
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  grid-template: "";
+  grid-gap: 30px;
+  padding: 65px 5px; }
+  .offer__women {
+    display: grid;
+    grid-area: offer__women;
+    background: #222224 url("../img/women.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 360px 260px rgba(33, 22, 22, 0.7); }
+  .offer__men {
+    display: grid;
+    grid-area: offer__men;
+    background: #222224 url("../img/men.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 360px 260px rgba(33, 22, 22, 0.7); }
+  .offer__kids {
+    display: grid;
+    grid-area: offer__kids;
+    background: #222224 url("../img/kids.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 360px 260px rgba(33, 22, 22, 0.7); }
+  .offer__accesories {
+    display: grid;
+    grid-area: offer__accesories;
+    background: #222224 url("../img/accesories.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 360px 260px rgba(33, 22, 22, 0.7); }
+  .offer__title {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    line-height: 22px;
+    font-size: 16px;
+    color: #FBFBFB;
+    text-transform: uppercase;
+    font-family: 'Lato-Refular' , sans-serif; }
+    .offer__title_red {
+      font-size: 24px;
+      color: #F16D7F;
+      line-height: 30px;
+      font-family: 'Lato-Bold', sans-serif; }
