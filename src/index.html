@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,49 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Fashion</title>
 </head>
+
 <body>
+    <header class="header">
+
+        <div class="header__navigation">
+            <a href="#" class="header__logo">
+                <img src="./img/logo.svg" alt="logo">
+            </a>
+            <!-- /.header__logo -->
+            <div class="header__search">
+                <form class="form-search" action="/search/" target="_blank">
+                    <input type="hidden" name="searchid">
+                    <input type="image" src="./img/search.svg" />
+                </form>
+            </div>
+            <!-- /.header__search -->
+            <div class="header__burger burger">
+                <input id="burger__toggle" type="checkbox" />
+                <span class="burger__btn"></span>
+            </div>
+            <!-- /.header__dropdown -->
+            <div class="header__icon">
+                <img src="./img/user.svg" alt="user">
+            </div>
+            <!-- /.header__icon -->
+            <div class="header__basket">
+                <img src="./img/basket.svg" alt="basket">
+            </div>
+            <!-- /.header__basket -->
+        </div>
     
-    
+     
+
+        <div class="header__heading">
+            <h1 class="header__title"> <strong class="header__title_huge">the brand</strong><br>
+                of luxerious <span class="header__title_red">fashion</span> </h1>
+            <!-- /.header__title -->
+        </div>
+        <!-- /.header__heading -->
+
+    </header>
+    <!-- /.header -->
+
 </body>
+
 </html>

@@ -32,3 +32,112 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
+
+*, ::before, ::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#burger__toggle {
+  opacity: 0; }
+
+.burger {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  z-index: 1; }
+  .burger__btn {
+    background-color: #E8E8E8;
+    display: block;
+    z-index: 100;
+    width: 32px;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    right: 5px; }
+    .burger__btn::before {
+      content: " ";
+      background-color: #E8E8E8;
+      display: block;
+      z-index: 100;
+      width: 32px;
+      height: 3px;
+      position: absolute;
+      top: -9px; }
+    .burger__btn::after {
+      content: " ";
+      background-color: #E8E8E8;
+      display: block;
+      z-index: 100;
+      width: 32px;
+      height: 3px;
+      position: absolute;
+      top: 9px; }
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 8.6fr;
+  min-height: 100vh;
+  align-items: center;
+  background: url("../img/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: left 10% bottom;
+  background-size: 44%;
+  background-color: #F1E4E6; }
+  .header__navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 0.2fr 1fr;
+    background-color: #222224;
+    align-items: center;
+    min-height: 75px;
+    grid-template-areas: "header__logo header__search header__burger header__icon header__basket"; }
+  .header__logo {
+    grid-area: header__logo;
+    justify-self: end; }
+  .header__search {
+    grid-area: header__search;
+    margin-left: 40px;
+    margin-top: 10px; }
+  .header__burger {
+    grid-area: header__burger;
+    justify-self: end; }
+  .header__icon {
+    grid-area: header__icon;
+    justify-self: center;
+    margin: 0 25px; }
+  .header__basket {
+    grid-area: header__basket; }
+  .header__heading {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: " . header__title . "; }
+  .header__title {
+    grid-area: header__title;
+    justify-self: end;
+    max-width: 425px;
+    text-align: left;
+    margin-right: 30px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: 'Lato-Refular' , sans-serif; }
+    .header__title::before {
+      content: " ";
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: -16px;
+      width: 12px;
+      height: 92px;
+      background-color: #F16D7F; }
+    .header__title_huge {
+      font-size: 48px;
+      line-height: 58px;
+      font-weight: 900; }
+    .header__title_red {
+      color: #F16D7F; }
