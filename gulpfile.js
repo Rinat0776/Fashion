@@ -24,4 +24,4 @@ const sass = require('gulp-sass');
     .pipe(dest("src/css"))
     .pipe(browserSync.stream());
 };
-exports.serve = bs;
+    exports.serve = bs;

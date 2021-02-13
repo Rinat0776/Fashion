@@ -38,7 +38,8 @@
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #ffffff; }
 
 #burger__toggle {
   opacity: 0; }
@@ -144,13 +145,12 @@ body {
 
 .offer {
   display: grid;
-  grid-template-columns: minmax(100px, 360px) minmax(100px, 360px) minmax(100px, 360px);
+  grid-template-columns: repeat(auto-fill, 360px);
   grid-template-rows: 260px 180px;
   grid-template-areas: "offer__women offer__men offer__kids"  "offer__accesories offer__accesories offer__accesories";
   align-items: center;
   justify-self: center;
   justify-content: center;
-  grid-template: "";
   grid-gap: 30px;
   padding: 65px 5px; }
   .offer__women {
@@ -207,3 +207,98 @@ body {
       color: #F16D7F;
       line-height: 30px;
       font-family: 'Lato-Bold', sans-serif; }
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 360px));
+  justify-self: center;
+  justify-content: center;
+  grid-gap: 30px;
+  padding: 0 5px; }
+  .products__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    color: #222222; }
+  .products__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 0; }
+  .products-title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 120px;
+    text-align: center;
+    align-content: end;
+    padding-bottom: 20px; }
+  .products__button {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 39px;
+    border: 1px solid #F16D7F;
+    color: #F16D7F;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent; }
+    .products__button:hover {
+      background-color: #FF6A6A;
+      color: #FBFBFB; }
+
+.card {
+  display: grid;
+  text-align: left;
+  background-color: #F8F8F8; }
+  .card__inner {
+    margin: 20px; }
+  .card__title {
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #000000;
+    font-family: 'Lato-Refular' , sans-serif; }
+  .card__description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    font-family: 'Lato-Refular' , sans-serif; }
+  .card__img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover; }
+  .card__cost {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    font-family: 'Lato-Refular' , sans-serif; }
+
+.services {
+  display: grid;
+  background-color: #222224;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 360px));
+  justify-self: center;
+  justify-content: center;
+  grid-gap: 40px;
+  margin: 90px 0;
+  padding: 104px 0; }
+  .services__box {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    align-content: center; }
+  .services__title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin: 28px 0 15px;
+    font-family: 'Lato-Refular' , sans-serif; }
+  .services__description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FBFBFB;
+    width: 300px;
+    margin: 0; }
