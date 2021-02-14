@@ -1,2 +1,75 @@
 .footer
-    
+    display: grid
+    grid-template-columns: repeat(auto-fill , minmax(200px, 567px))
+    background:   url("../img/footer-bg.png")
+    background-repeat: no-repeat
+    background-size: cover
+    justify-self: center
+    justify-content: center
+    box-shadow: inset 0px 174px 10px 1px  rgba(250, 249, 249, 0.7), inset    0px 448px 0px 0px rgba(244, 244, 244, 0.7)
+    height: 529px
+    &__box
+        display: grid
+        justify-items: center
+        text-align: center
+        align-content: center
+        margin-bottom: 100px
+    &__img
+        width: 150px
+        height: 150px
+    &__description
+        font-size: 20px
+        line-height: 24px
+        width: 340px
+        margin-top: 30px
+        +regular
+        &_italic
+            +italic
+    &__form
+        display: grid
+        justify-items: center
+        text-align: center
+        align-content: center
+    &__title
+        font-size: 24px
+        line-height: 40px
+        text-transform: uppercase
+        +bold
+    &__subtitle
+        font-size: 18px
+        line-height: 30px
+        margin-bottom: 32px
+        text-transform: uppercase
+        +regular   
+    &__input
+        width: 256px
+        height: 49px
+        border-radius: 50px 0 0 50px
+        outline: none
+        border: none
+        background-color:  #E1E1E1
+        margin-right: -4px
+        &::placeholder
+            color: $black
+            font-size: 14px
+            line-height: 17px
+            padding-left: 20px
+            +regular
+    &__submit
+        font-size: 14px
+        line-height: 17px
+        color: $light-text
+        padding: 16px 23px
+        outline: none
+        border: none
+        background-color: $red-text
+        border-radius: 0px 50px  50px 0
+    &__social
+        display: grid
+        background-color: $black
+        height: 79px
+        grid-column-start: 1
+        grid-column-end: -1
+
+
+
