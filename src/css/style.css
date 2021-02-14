@@ -110,7 +110,21 @@ body {
     justify-self: center;
     margin: 0 25px; }
   .header__basket {
+    position: relative;
     grid-area: header__basket; }
+    .header__basket_number {
+      display: inline-block;
+      position: absolute;
+      top: -6px;
+      left: 24px;
+      width: 19px;
+      height: 19px;
+      background-color: #F16D7F;
+      font-size: 12px;
+      line-height: 20px;
+      border-radius: 50%;
+      text-align: center;
+      color: #FBFBFB; }
   .header__heading {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -376,3 +390,22 @@ body {
     height: 79px;
     grid-column-start: 1;
     grid-column-end: -1; }
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 758px));
+  background-color: #222224;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  height: 79px; }
+  .footer__copy {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB; }
+  .footer__social {
+    margin-left: 215px; }
+  .footer__icon {
+    width: 31px;
+    height: 32px;
+    margin-right: 3px; }

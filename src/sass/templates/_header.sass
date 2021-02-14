@@ -31,7 +31,21 @@
         justify-self: center
         margin: 0 25px    
     &__basket
+        position: relative 
         grid-area: header__basket
+        &_number
+            display: inline-block
+            position: absolute
+            top: -6px
+            left: 24px
+            width: 19px
+            height: 19px
+            background-color: $red-text
+            font-size: 12px
+            line-height: 20px
+            border-radius: 50%
+            text-align: center
+            color: $light-text
     &__heading
         display: grid 
         grid-template-columns: 1fr 4fr 1fr
