@@ -109,10 +109,10 @@ body {
     grid-area: header__icon;
     justify-self: center;
     margin: 0 25px; }
-  .header__basket {
+  .header__cart {
     position: relative;
     grid-area: header__basket; }
-    .header__basket_number {
+    .header__cart_counter {
       display: inline-block;
       position: absolute;
       top: -6px;
