@@ -1,66 +1,56 @@
 .offer
     display: grid
-    grid-template-columns: repeat(auto-fill , 360px)
-    grid-template-rows: 260px 180px
-    grid-template-areas: "offer__women offer__men offer__kids"  "offer__accesories offer__accesories offer__accesories"
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 260px  180px
     align-items: center
     justify-self: center
     justify-content: center
     grid-gap: 30px
     padding: 65px 5px 
-    &__women
-        display: grid
-        grid-area: offer__women
-        background: $black url("../img/women.png")
-        background-repeat: no-repeat
-        background-position: center
-        background-size: cover
-        width: 100%
+    &__card
         height: 100%
-        box-shadow: inset 360px 260px  rgba(33 , 22 ,  22, 0.7 )
-    &__men
-        display: grid
-        grid-area: offer__men
-        background: $black url("../img/men.png")
-        background-repeat: no-repeat
-        background-position: center
-        background-size: cover
         width: 100%
-        height: 100%
-        box-shadow: inset 360px 260px  rgba(33 , 22 ,  22, 0.7 )
-    &__kids
-        display: grid
-        grid-area: offer__kids
-        background: $black  url("../img/kids.png")
-        background-repeat: no-repeat
-        background-position: center
-        background-size: cover
-        width: 100%
-        height: 100%
-        box-shadow: inset 360px 260px  rgba(33 , 22 ,  22, 0.7 )
-    &__accesories
-        display: grid
-        grid-area: offer__accesories
-        background: $black url("../img/accesories.png")
-        background-repeat: no-repeat
-        background-position: center
-        background-size: cover
-        width: 100%
-        height: 100%
-        box-shadow: inset 360px 260px  rgba(33 , 22 ,  22, 0.7 )
-        
-    &__title
-        justify-self: center
-        align-self: center
+        display: flex
+        justify-content: center
+        align-items: center
         text-align: center
+        &-1
+            background: url("../img/women.jpg")
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            box-shadow: inset 360px 260px rgba(33, 22, 22, 0.7)
+        &-2
+            background: url("../img/men.jpg")
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            box-shadow: inset 360px 260px rgba(33, 22, 22, 0.7)
+        &-3
+            background: url("../img/kids.jpg")
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            box-shadow: inset 360px 260px rgba(33, 22, 22, 0.7)
+        &-4
+            background: url("../img/accesories.jpg")
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            box-shadow: inset 360px 260px rgba(33, 22, 22, 0.7)
+    &__accesories
+        grid-column: 1/-1 
+    &__title
         line-height: 22px
         font-size: 16px
         color: $light-text
         text-transform: uppercase
         +regular
         &_red
+            display: block
             font-size: 24px
-            color: $red-text
             line-height: 30px
             +bold
-       
+    &__link 
+        text-decoration: none
+        color:  $red-text

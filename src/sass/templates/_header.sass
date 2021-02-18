@@ -15,7 +15,7 @@
         background-color: $black
         align-items: center
         min-height: 75px
-        grid-template-areas: "header__logo header__search header__burger header__icon header__basket"
+        grid-template-areas: "header__logo header__search header__burger header__icon header__cart"
     &__logo
         grid-area: header__logo
         justify-self: end
@@ -31,8 +31,10 @@
         justify-self: center
         margin: 0 25px    
     &__cart
+        width: 41px
+        height: 37px
         position: relative 
-        grid-area: header__basket
+        grid-area: header__cart
         &_counter
             display: inline-block
             position: absolute
