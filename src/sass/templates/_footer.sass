@@ -1,11 +1,10 @@
 .footer
-    display: grid
-    grid-template-columns: repeat(auto-fill , minmax(200px, 758px))
-    background-color: $black
-    align-items: center
-    justify-items: center
-    justify-content: center
-    height: 79px
+    background: $black
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 79px
     &__copy
         font-size: 16px
         line-height: 19px
@@ -16,4 +15,9 @@
         width: 31px
         height: 32px
         margin-right: 3px
+        &:hover
+            background: $red-text
+    &__link
+        text-decoration: none
+        
 

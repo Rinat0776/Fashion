@@ -1,42 +1,38 @@
 .header
-    display: grid
-    grid-template-rows: 1fr 8.6fr
-    min-height: 100vh
-    align-items: center
-    background: url("../img/header_bg.png")
-    background-repeat: no-repeat
-    background-position: left 10% bottom
-    background-size: 44%
-    background-color: $header-color
-    
-    &__navigation
-        display: grid
-        grid-template-columns: 1fr 1fr 4fr 0.2fr 1fr
-        background-color: $black
+    background: $black
+    &__menu
+        display: flex
+        justify-content: space-between
         align-items: center
-        min-height: 75px
-        grid-template-areas: "header__logo header__search header__burger header__icon header__cart"
+        text-align: center  
+        padding: 18px 0
+    &__left
+        display: flex
+        justify-content: space-between
+        align-items: center  
     &__logo
-        grid-area: header__logo
-        justify-self: end
+        width: 44px
+        height: 38px
+        margin-right: 41px
     &__search
-        grid-area: header__search
-        margin-left: 40px
-        margin-top: 10px
-    &__burger
-        grid-area: header__burger
-        justify-self: end
+        width: 26px
+        height: 27px
+        margin-top: 11px
+    &__right
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__bars
+        width: 32px
+        height: 23px
     &__icon
-        grid-area: header__icon
-        justify-self: center
-        margin: 0 25px    
+        width: 29px
+        height: 29px     
     &__cart
-        width: 41px
-        height: 37px
+        width: 32px
+        height: 29px
         position: relative 
-        grid-area: header__cart
         &_counter
-            display: inline-block
             position: absolute
             top: -6px
             left: 24px
@@ -48,36 +44,6 @@
             border-radius: 50%
             text-align: center
             color: $light-text
-    &__heading
-        display: grid 
-        grid-template-columns: 1fr 4fr 1fr
-        grid-template-areas:   " . header__title . "
-    &__title
-        grid-area: header__title  
-        justify-self: end 
-        max-width: 425px
-        text-align: left
-        margin-right: 30px
-        position: relative
-        text-transform: uppercase
-        font-size: 32px
-        line-height: 38px
-        font-weight: 700
-        +regular
-        &::before
-            content: " "
-            display: flex
-            position: absolute
-            top: 0 
-            left: -16px
-            width: 12px
-            height: 92px
-            background-color: $red-text
-        &_huge
-            font-size: 48px
-            line-height: 58px
-            font-weight: 900
-        &_red
-            color: $red-text
+
     
         

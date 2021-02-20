@@ -1,0 +1,89 @@
+@media  ( max-width: 1124px  )
+    .header
+        &__menu
+            padding: 18px 20px
+    .services
+        grid-template-columns: repeat(auto-fill, minmax(200px, 530px))
+
+    .subscribe
+        height: 638px
+        padding: 50px 0
+        box-shadow: inset 0px 244px 22px 1px rgba(255, 255, 255,  0.7),  inset 0px 638px 0px 0px rgba(244, 244, 244,  0.7)
+    .footer 
+        padding: 0 20px
+@media  ( max-width: 768px  )
+    .header
+        &__menu
+            padding: 18px 32px
+    .hero
+        height: 386px
+        &__brand_right
+            padding-left: 30px
+        &__title
+            font-size: 24px
+            &_huge
+                font-size: 42px
+                line-height: 53px
+    .offer
+        grid-template-rows: 167px 116px
+        grid-gap: 19px
+        padding: 65px 16px
+    .products
+        grid-gap: 14px
+        padding: 0 8px
+        &__button
+            margin-top: 17px
+    .services
+            padding: 48px 0 64px    
+@media  ( max-width: 376px  )
+    .header
+        &__menu
+            padding: 16px 18px         
+        &__icon
+           display: none
+        &__cart
+            display: none
+    .hero
+        &__brand_left
+            display: none
+        &__brand_right
+            justify-content: center
+            align-items: center
+            padding-left: 0
+            flex-basis: 100%
+        &__title
+            margin-right: 0
+            font-size: 20px
+            font-weight: 900
+            &_huge
+                font-size: 38px
+                font-weight: 700
+    .offer
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(3,  247px) 111px
+        grid-gap: 32px
+    .products
+        grid-gap: 16px
+        &__button
+            margin-top: 24px
+    .subscribe
+        grid-template-columns: 1fr
+        &__description
+            font-size: 18px
+        &__subtitle
+            font-size: 14px
+        &__input
+            width: 220px
+            height: 45px
+        &__submit
+            padding: 15px 23px
+    .footer
+        &__wrap
+            flex-direction: column-reverse
+            justify-content: center
+            height: 143px
+        &__copy
+            margin: 0
+        &__social
+            margin: 43px 0  40px
+

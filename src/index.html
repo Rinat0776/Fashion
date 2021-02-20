@@ -11,45 +11,60 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__navigation">
-            <a href="#" class="header__logo">
-                <img src="./img/logo.svg" alt="logo">
-            </a>
-            <!-- /.header__logo -->
-            <div class="header__search">
-                <form class="form-search" action="/search/" target="_blank">
-                    <input type="hidden" name="searchid">
-                    <input type="image" src="./img/search.svg" />
-                </form>
+    <header class="header ">
+        <div class=" container">
+            <div class="header__menu">
+                <div class="header__left">
+                    <a href="#" class="header__logo">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                    <!-- /.header__logo -->
+                    <div class="header__search">
+                        <input type="image" src="./img/search.svg" />
+                    </div>
+                    <!-- /.header__search -->
+                </div>
+                <!--header__left-->
+                <div class="header__right">
+                    <div class="header__bars">
+                        <img src="./img/bars.svg" alt="">
+                    </div>
+                    <!-- /.header__bars-->
+                        <img src="./img/user.svg" class="header__icon" alt="user">
+                    <!-- /.header__icon -->
+                    <div class="header__cart">
+                        <img src="./img/cart.svg" alt="cart">
+                        <span class="header__cart_counter">5</span>
+                </div>
+                    <!-- /.header__cart -->
+                </div>
+                <!-- /.header__right -->
             </div>
-            <!-- /.header__search -->
-            <div class="header__burger burger">
-                <input id="burger__toggle" type="checkbox" />
-                <span class="burger__btn"></span>
-            </div>
-            <!-- /.header__dropdown -->
-            <div class="header__icon">
-                <img src="./img/user.svg" alt="user">
-            </div>
-            <!-- /.header__icon -->
-            <span class="header__cart">
-                <img src="./img/cart.svg" alt="cart">
-                <span class="header__cart_counter">5</span>
-        </span>
-            <!-- /.header__basket -->
+            <!-- /.header__menu -->
         </div>
-        <div class="header__heading">
-            <h1 class="header__title"> <strong class="header__title_huge">the brand</strong><br>
-                of luxerious <span class="header__title_red">fashion</span> </h1>
-            <!-- /.header__title -->
-        </div>
-        <!-- /.header__heading -->
+<!-- /.container-->
     </header>
     <!-- /.header -->
     <main>
+        <section class="hero">
+
+            <div class="hero__brand_left">
+
+            </div>
+            <div class="hero__brand_right">
+                <div class="hero__heading">
+                    <h1 class="hero__title"> <strong class="hero__title_huge">the brand</strong><br>
+                        of luxerious <span class="hero__title_red">fashion</span> </h1>
+                </div>
+                <!-- /.hero__heading -->
+            </div>
+
+
+        </section>
+        <!-- /.hero -->
+        </section>
         <section class="offer container">
-                <div class="offer__card-1 offer__card ">
+            <div class="offer__card-1 offer__card ">
                 <h3 class="offer__title">30% off
                     <span class="offer__title_red"><a href="#" class="offer__link">for women</a></span> </h3>
                 <!-- /.card__title -->
@@ -69,8 +84,8 @@
             </div>
             <!-- /.offer__kids -->
             <div class="offer__card-4 offer__accesories offer__card  ">
-                <h3 class="offer__title">luxirous & trendy<span
-                        class="offer__title_red"><a href="#" class="offer__link">accesories</a></span> </h3>
+                <h3 class="offer__title">luxirous & trendy<span class="offer__title_red"><a href="#"
+                            class="offer__link">accesories</a></span> </h3>
                 <!-- /.card__title -->
             </div>
             <!-- /.offer__accesories -->
@@ -88,14 +103,14 @@
             <div class="products__card card">
                 <div class="card__wrapper">
                     <img src="./img/layer-1.jpg" alt="layer" class="card__img">
-                <div class="card__mask">
-                    <button class="card__btn">
-                        <img src="./img/cart.svg" alt="cart" class="card__icon">
-                       <span class="card__text">Add to Cart</span>
-                    </button>
-                    <!-- /.card__btn -->
-                </div>
-                <!-- /.card__mask -->
+                    <div class="card__mask">
+                        <button class="card__btn">
+                            <img src="./img/cart.svg" alt="cart" class="card__icon">
+                            <span class="card__text">Add to Cart</span>
+                        </button>
+                        <!-- /.card__btn -->
+                    </div>
+                    <!-- /.card__mask -->
                 </div>
                 <!-- /.card__wrapper -->
                 <div class="card__inner">
@@ -112,44 +127,18 @@
             </div>
             <!-- /.products__card -->
             <div class="products__card card">
-                   <div class="card__wrapper">
-                       <img src="./img/layer-2.jpg" alt="layer" class="card__img">
-                       <div class="card__mask">
-                           <button class="card__btn">
-                               <img src="./img/cart.svg" alt="cart" class="card__icon">
-                               <span class="card__text">Add to Cart</span>
-                           </button>
-                           <!-- /.card__btn -->
-                       </div>
-                       <!-- /.card__mask -->
-                   </div>
-                   <!-- /.card__wrapper -->
-                <div class="card__inner">
-                    <h3 class="card__title">ellery x m'o capsule</h3>
-                    <!-- /.card__title -->
-                    <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <!-- /.card__description -->
-                    <span class="card__cost">$52.00</span>
-                    <!-- /.caed__cost -->
-                </div>
-                <!-- /.card__inner -->
-            </div>
-            <!-- /.products__card -->
-            <div class="products__card card">
-                    <div class="card__wrapper">
-                        <img src="./img/layer-3.jpg" alt="layer" class="card__img">
-                        <div class="card__mask">
-                            <button class="card__btn">
-                                <img src="./img/cart.svg" alt="cart" class="card__icon">
-                                <span class="card__text">Add to Cart</span>
-                            </button>
-                            <!-- /.card__btn -->
-                        </div>
-                        <!-- /.card__mask -->
+                <div class="card__wrapper">
+                    <img src="./img/layer-2.jpg" alt="layer" class="card__img">
+                    <div class="card__mask">
+                        <button class="card__btn">
+                            <img src="./img/cart.svg" alt="cart" class="card__icon">
+                            <span class="card__text">Add to Cart</span>
+                        </button>
+                        <!-- /.card__btn -->
                     </div>
-                    <!-- /.card__wrapper -->
+                    <!-- /.card__mask -->
+                </div>
+                <!-- /.card__wrapper -->
                 <div class="card__inner">
                     <h3 class="card__title">ellery x m'o capsule</h3>
                     <!-- /.card__title -->
@@ -164,44 +153,70 @@
             </div>
             <!-- /.products__card -->
             <div class="products__card card">
-                     <div class="card__wrapper">
-                         <img src="./img/layer-4.jpg" alt="layer" class="card__img">
-                         <div class="card__mask">
-                             <button class="card__btn">
-                                 <img src="./img/cart.svg" alt="cart" class="card__icon">
-                                 <span class="card__text">Add to Cart</span>
-                             </button>
-                             <!-- /.card__btn -->
-                         </div>
-                         <!-- /.card__mask -->
-                     </div>
-                     <!-- /.card__wrapper -->
-                <div class="card__inner">
-                    <h3 class="card__title">ellery x m'o capsule</h3>
-                    <!-- /.card__title -->
-                    <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <!-- /.card__description -->
-                    <span class="card__cost">$52.00</span>
-                    <!-- /.caed__cost -->
-                </div>
-                <!-- /.card__inner -->
-            </div>
-            <!-- /.products__card -->
-            <div class="products__card card">
-                    <div class="card__wrapper">
-                        <img src="./img/layer-5.jpg" alt="layer" class="card__img">
-                        <div class="card__mask">
-                            <button class="card__btn">
-                                <img src="./img/cart.svg" alt="cart" class="card__icon">
-                                <span class="card__text">Add to Cart</span>
-                            </button>
-                            <!-- /.card__btn -->
-                        </div>
-                        <!-- /.card__mask -->
+                <div class="card__wrapper">
+                    <img src="./img/layer-3.jpg" alt="layer" class="card__img">
+                    <div class="card__mask">
+                        <button class="card__btn">
+                            <img src="./img/cart.svg" alt="cart" class="card__icon">
+                            <span class="card__text">Add to Cart</span>
+                        </button>
+                        <!-- /.card__btn -->
                     </div>
-                    <!-- /.card__wrapper -->
+                    <!-- /.card__mask -->
+                </div>
+                <!-- /.card__wrapper -->
+                <div class="card__inner">
+                    <h3 class="card__title">ellery x m'o capsule</h3>
+                    <!-- /.card__title -->
+                    <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <!-- /.card__description -->
+                    <span class="card__cost">$52.00</span>
+                    <!-- /.caed__cost -->
+                </div>
+                <!-- /.card__inner -->
+            </div>
+            <!-- /.products__card -->
+            <div class="products__card card">
+                <div class="card__wrapper">
+                    <img src="./img/layer-4.jpg" alt="layer" class="card__img">
+                    <div class="card__mask">
+                        <button class="card__btn">
+                            <img src="./img/cart.svg" alt="cart" class="card__icon">
+                            <span class="card__text">Add to Cart</span>
+                        </button>
+                        <!-- /.card__btn -->
+                    </div>
+                    <!-- /.card__mask -->
+                </div>
+                <!-- /.card__wrapper -->
+                <div class="card__inner">
+                    <h3 class="card__title">ellery x m'o capsule</h3>
+                    <!-- /.card__title -->
+                    <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <!-- /.card__description -->
+                    <span class="card__cost">$52.00</span>
+                    <!-- /.caed__cost -->
+                </div>
+                <!-- /.card__inner -->
+            </div>
+            <!-- /.products__card -->
+            <div class="products__card card">
+                <div class="card__wrapper">
+                    <img src="./img/layer-5.jpg" alt="layer" class="card__img">
+                    <div class="card__mask">
+                        <button class="card__btn">
+                            <img src="./img/cart.svg" alt="cart" class="card__icon">
+                            <span class="card__text">Add to Cart</span>
+                        </button>
+                        <!-- /.card__btn -->
+                    </div>
+                    <!-- /.card__mask -->
+                </div>
+                <!-- /.card__wrapper -->
                 <div class="card__inner">
                     <h3 class="card__title">ellery x m'o capsule</h3>
                     <!-- /.card__title -->
@@ -216,18 +231,18 @@
             </div>
             <!-- /.products__card -->
             <div class="products__card card ">
-                    <div class="card__wrapper">
-                        <img src="./img/layer-6.jpg" alt="layer" class="card__img">
-                        <div class="card__mask">
-                            <button class="card__btn">
-                                <img src="./img/cart.svg" alt="cart" class="card__icon">
-                                <span class="card__text">Add to Cart</span>
-                            </button>
-                            <!-- /.card__btn -->
-                        </div>
-                        <!-- /.card__mask -->
+                <div class="card__wrapper">
+                    <img src="./img/layer-6.jpg" alt="layer" class="card__img">
+                    <div class="card__mask">
+                        <button class="card__btn">
+                            <img src="./img/cart.svg" alt="cart" class="card__icon">
+                            <span class="card__text">Add to Cart</span>
+                        </button>
+                        <!-- /.card__btn -->
                     </div>
-                    <!-- /.card__wrapper -->
+                    <!-- /.card__mask -->
+                </div>
+                <!-- /.card__wrapper -->
                 <div class="card__inner">
                     <h3 class="card__title">ellery x m'o capsule</h3>
                     <!-- /.card__title -->
@@ -277,9 +292,7 @@
         <!-- /.services -->
         <section class="subscribe">
             <div class="subscribe__box">
-
                 <img src="./img/layer-8.jpg" class="subscribe__img" alt=" layer">
-
                 <!-- /.subscribe__img -->
                 <p class="subscribe__description"> “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
                         class="subscribe__description_italic">a pulvinar purus condimentum“</span>
@@ -302,15 +315,23 @@
         <!-- /.subscribe -->
     </main>
     <footer class="footer">
-        <p class="footer__copy">&#169;2021 Brand All Rights Reserved.</p>
-        <!-- /.footer__copy -->
-        <div class="footer__social">
-            <img src="./img/facebook.svg" alt="facebook" class="footer__icon">
-            <img src="./img/instagram.svg" alt="instagram" class="footer__icon">
-            <img src="./img/pinterest.svg" alt="pinterest" class="footer__icon">
-            <img src="./img/twitter.svg" alt="twitter" class="footer__icon">
+        <div class="container">
+            <div class="footer__wrap">
+                <p class="footer__copy">&#169;2021 Brand All Rights Reserved.</p>
+                <!-- /.footer__copy -->
+                <div class="footer__social">
+                    <a href="#" class="footer__link"><img src="./img/facebook.png" alt="facebook" class="footer__icon"></a>
+                    <a href="#" class="footer__link"><img src="./img/instagram.png" alt="instagram" class="footer__icon"></a>
+                    <a href="#" class="footer__link"><img src="./img/pinterest.png" alt="pinterest" class="footer__icon"></a>
+                    <a href="#" class="footer__link"> <img src="./img/twitter.png" alt="twitter" class="footer__icon"></a> 
+                </div>
+                <!-- /.footer__social -->
+            </div>
+            <!-- /.footer__wrap -->
+
         </div>
-        <!-- /.footer__social -->
+        <!-- /.container -->
+
     </footer>
     <!-- /.footer -->
 
