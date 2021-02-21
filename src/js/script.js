@@ -10,21 +10,25 @@ function toggleMenu() {
 
 headerBars.addEventListener('click', toggleMenu);
 menuClose.addEventListener('click', toggleMenu);
+
 //Валидация 
-// $('.subscribe__form').validate({
-// rules:{
-//          userEmail: {
+// $(function(){
+//     $('.subscribe__input').validate({
+//   rules: {
+//    userEmail: {
 //             required: true,
 //             email: true
 //          }
-//     },
-//     errorElement: "div",
-//     errorClass: "invalidSabmit",
-//     messages: {
-//         userEmail: {
-//             required: "Заполните поле ",
-//             email: "Введите корректный email"
-//          }
-//     }
-// });
+//   },
+//      errorElement: "div",
+//      errorClass: "invalidSubscribe",
+//   messages: {
+//   userEmail: {
+//  required: "Поле 'Email' обязательно к заполнению",
+//  email: "Введите корректный email"
+//  },
+//   }
+//  });
+// }); 
+
     

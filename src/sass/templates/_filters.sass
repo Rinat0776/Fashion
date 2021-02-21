@@ -1,0 +1,82 @@
+.filters
+    &__wrap
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        margin-top: 24px      
+    &__left
+        position: relative             
+    &__img     
+        &_right
+            width: 10px
+            height: 5px
+            margin-left: 10px
+            cursor: pointer
+    &__right
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-left: 320px
+        &_title
+            display: inline-block
+            font-size: 14px
+            line-height: 17px
+            color: $filters-color
+            margin-left: 28px
+            +regular
+       
+    &__category
+        margin-bottom: 24px
+        &_title
+            font-size: 14px
+            line-height: 37px
+            color: $category
+            padding-left: 11px
+            min-height: 37px
+            border-bottom: 1px solid #ebebeb
+            margin-bottom: 24px
+            position: relative
+            cursor: pointer
+            &::before
+                content: " "
+                width: 5px
+                min-height: inherit
+                background: $category
+                position: absolute
+                left: 0
+                top: 1px
+        &_link
+            text-decoration: none    
+            display: block
+            padding: 0 34px 0 16px
+            font-size: 14px     
+            line-height: 17px
+            color: $filters-color
+            &::last-child
+                margin-bottom: 11px
+.filterIcon
+    width: 15px
+    height: 10px
+    margin-left: 11px
+    cursor: pointer
+.filterPopup
+    position: absolute
+    left: 0
+    top: 0
+    width: 360px
+    background: #ffffff
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 46px 16px 16px 16px
+    z-index: -1
+    overflow-y: auto 
+.filterLabel
+    font-size: 14px
+    line-height: 17px
+    +bold  
+.filterLabelPink 
+    color: #ef5b70 !important
+    left: 16px
+    top: 13px
+.filterIconPink 
+    left: 16px
+    top: 13px
