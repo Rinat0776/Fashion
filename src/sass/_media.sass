@@ -29,10 +29,14 @@
         grid-gap: 19px
         padding: 65px 16px
     .products
-        grid-gap: 14px
-        padding: 0 8px
+        &-title
+            margin-bottom: 72px
+        &__items
+            grid-template-columns: repeat( 2, 1fr)
+            grid-gap: 14px
+            padding: 0 18px
         &__button
-            margin-top: 17px
+            margin-top: 32px
     .services
             padding: 48px 0 64px    
 @media  ( max-width: 376px  )
@@ -63,9 +67,14 @@
         grid-template-rows: repeat(3,  247px) 111px
         grid-gap: 32px
     .products
-        grid-gap: 16px
+        &-title
+            margin-bottom: 64px
+        &__items
+            grid-template-columns: 1fr
+            grid-gap: 15px
+            padding: 0 8px
         &__button
-            margin-top: 24px
+            margin-top: 41px
     .subscribe
         grid-template-columns: 1fr
         &__description

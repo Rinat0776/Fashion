@@ -10,3 +10,21 @@ function toggleMenu() {
 
 headerBars.addEventListener('click', toggleMenu);
 menuClose.addEventListener('click', toggleMenu);
+//Валидация 
+// $('.subscribe__form').validate({
+// rules:{
+//          userEmail: {
+//             required: true,
+//             email: true
+//          }
+//     },
+//     errorElement: "div",
+//     errorClass: "invalidSabmit",
+//     messages: {
+//         userEmail: {
+//             required: "Заполните поле ",
+//             email: "Введите корректный email"
+//          }
+//     }
+// });
+    

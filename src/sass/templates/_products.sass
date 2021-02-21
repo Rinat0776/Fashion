@@ -1,31 +1,24 @@
 .products
-    display: grid
-    grid-template-columns: repeat(auto-fill , minmax(200px, 360px))
-    justify-self: center
-    justify-content: center
-    grid-gap: 30px
-    padding: 0 5px
+    &-title  
+        margin-bottom: 48px
+        text-align: center
     &__title   
         font-size: 30px
         line-height: 36px
         margin: 0
         color: $menu-color
+        +regular
     &__subtitle
         font-size: 14px
         line-height: 17px
         color: $darkgrey-text
         margin: 0
-    &-title  
-        grid-column-start: 1
-        grid-column-end: -1
-        height: 120px
-        text-align: center
-        align-content: end
-        padding-bottom: 20px
+        +regular
     &__button
-        grid-column-start: 1
-        grid-column-end: -1
-        justify-self: center
+        text-align: center
+        display: flex
+        margin: 0 auto
+        margin-top: 48px
         font-size: 16px
         line-height: 20px
         padding: 15px 39px
@@ -37,6 +30,13 @@
         &:hover
            background-color: $hover
            color: $light-text
+    &__items
+        display: grid
+        grid-template-columns: repeat( 3, 1fr)
+        justify-self: center
+        justify-content: center
+        grid-gap: 30px
+        padding: 0 5px
 .card
     display: grid
     text-align: left 

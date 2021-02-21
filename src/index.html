@@ -30,26 +30,24 @@
                         <img src="./img/bars.svg" alt="">
                     </div>
                     <!-- /.header__bars-->
-                        <img src="./img/user.svg" class="header__icon" alt="user">
+                    <img src="./img/user.svg" class="header__icon" alt="user">
                     <!-- /.header__icon -->
                     <div class="header__cart">
                         <img src="./img/cart.svg" alt="cart">
                         <span class="header__cart_counter">5</span>
-                </div>
+                    </div>
                     <!-- /.header__cart -->
                 </div>
                 <!-- /.header__right -->
             </div>
             <!-- /.header__menu -->
         </div>
-<!-- /.container-->
+        <!-- /.container-->
     </header>
     <!-- /.header -->
     <main>
         <section class="hero">
-
             <div class="hero__brand_left">
-
             </div>
             <div class="hero__brand_right">
                 <div class="hero__heading">
@@ -58,11 +56,8 @@
                 </div>
                 <!-- /.hero__heading -->
             </div>
-
-
         </section>
         <!-- /.hero -->
-        </section>
         <section class="offer container">
             <div class="offer__card-1 offer__card ">
                 <h3 class="offer__title">30% off
@@ -92,7 +87,7 @@
         </section>
         <!-- /.offer -->
 
-        <sectin class="products">
+        <section class="products container">
             <div class="products-title">
                 <h2 class="products__title">Fetured Items</h2>
                 <!-- /.products__title -->
@@ -100,7 +95,8 @@
                 <!-- /.products__subtitle -->
             </div>
             <!-- /.section-title -->
-            <div class="products__card card">
+            <div class="products__items">
+                  <div class="products__card card">
                 <div class="card__wrapper">
                     <img src="./img/layer-1.jpg" alt="layer" class="card__img">
                     <div class="card__mask">
@@ -256,9 +252,12 @@
                 <!-- /.card__inner -->
             </div>
             <!-- /.products__card -->
+            </div>
+            <!-- /.products__items -->
+          
             <button class="button products__button"><a href="#"></a>Browse All Product</button>
             <!-- /.button products__button -->
-        </sectin>
+        </section>
         <!-- /.products -->
         <section class="services">
             <div class="services__box">
@@ -306,8 +305,15 @@
                     <!-- /.subscribe__title -->
                     <div class="subscribe__subtitle">for our newlatter and promotion</div>
                     <!-- /.subscribe__subtitle -->
-                    <input type="email" name="userEmail" class="subscribe__input" placeholder="Enter Your Email">
-                    <input type="submit" value="Subscribe" class="subscribe__submit">
+                    <form action="#" class="form subscribe__form">
+                        <div class="input__grup">
+                            <input type="email" name="userEmail" class="subscribe__input"
+                                placeholder="Enter Your Email">
+                            <input type="submit" value="Subscribe" class="subscribe__submit">
+                        </div>
+                    </form>
+                    <!-- /.subscribe__form -->
+
                 </div>
                 <!-- /.subscribe__inner -->
             </form>
@@ -320,10 +326,14 @@
                 <p class="footer__copy">&#169;2021 Brand All Rights Reserved.</p>
                 <!-- /.footer__copy -->
                 <div class="footer__social">
-                    <a href="#" class="footer__link"><img src="./img/facebook.png" alt="facebook" class="footer__icon"></a>
-                    <a href="#" class="footer__link"><img src="./img/instagram.png" alt="instagram" class="footer__icon"></a>
-                    <a href="#" class="footer__link"><img src="./img/pinterest.png" alt="pinterest" class="footer__icon"></a>
-                    <a href="#" class="footer__link"> <img src="./img/twitter.png" alt="twitter" class="footer__icon"></a> 
+                    <a href="#" class="footer__link"><img src="./img/facebook.png" alt="facebook"
+                            class="footer__icon"></a>
+                    <a href="#" class="footer__link"><img src="./img/instagram.png" alt="instagram"
+                            class="footer__icon"></a>
+                    <a href="#" class="footer__link"><img src="./img/pinterest.png" alt="pinterest"
+                            class="footer__icon"></a>
+                    <a href="#" class="footer__link"> <img src="./img/twitter.png" alt="twitter"
+                            class="footer__icon"></a>
                 </div>
                 <!-- /.footer__social -->
             </div>
@@ -344,38 +354,39 @@
                 <div class="menu__header">
                     MAN
                 </div>
-                <a href="#" class="menu__link" >Accessories</a>
-                <a href="#" class="menu__link" >Bags</a>
-                <a href="#" class="menu__link" >Denim</a>
-                <a href="#" class="menu__link" >T-Shirts</a>
+                <a href="#" class="menu__link">Accessories</a>
+                <a href="#" class="menu__link">Bags</a>
+                <a href="#" class="menu__link">Denim</a>
+                <a href="#" class="menu__link">T-Shirts</a>
             </div>
 
             <div class="menu__unit">
                 <div class="menu__header">
                     WOMAN
                 </div>
-                <a href="#" class="menu__link" >Accessories</a>
-                <a href="#" class="menu__link" >Jackets & Coats</a>
-                <a href="#" class="menu__link" >Polos</a>
-                <a href="#" class="menu__link" >T-Shirts</a>
-                <a href="#" class="menu__link" >Shirts</a>
+                <a href="#" class="menu__link">Accessories</a>
+                <a href="#" class="menu__link">Jackets & Coats</a>
+                <a href="#" class="menu__link">Polos</a>
+                <a href="#" class="menu__link">T-Shirts</a>
+                <a href="#" class="menu__link">Shirts</a>
             </div>
 
             <div class="menu__unit">
                 <div class="menu__header">
                     KIDS
                 </div>
-                <a href="#" class="menu__link" >Accessories</a>
-                <a href="#" class="menu__link" >Jackets & Coats</a>
-                <a href="#" class="menu__link" >Polos</a>
-                <a href="#" class="menu__link" >T-Shirts</a>
-                <a href="#" class="menu__link" >Shirts</a>
-                <a href="#" class="menu__link" >Bags</a>
+                <a href="#" class="menu__link">Accessories</a>
+                <a href="#" class="menu__link">Jackets & Coats</a>
+                <a href="#" class="menu__link">Polos</a>
+                <a href="#" class="menu__link">T-Shirts</a>
+                <a href="#" class="menu__link">Shirts</a>
+                <a href="#" class="menu__link">Bags</a>
             </div>
 
         </div>
     </div>
-<script src="js/script.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
 
 </html>
