@@ -4,7 +4,14 @@
             padding: 18px 20px
     .services
         grid-template-columns: repeat(auto-fill, minmax(200px, 530px))
-
+    .new-arrivals
+        &__wrap
+            padding: 0 16px
+    .filters
+        &__wrap
+            padding: 0 16px
+        &__right
+            margin-right: 250px
     .subscribe
         height: 638px
         padding: 50px 0
@@ -24,6 +31,30 @@
             &_huge
                 font-size: 42px
                 line-height: 53px
+    .new-arrivals
+        &__wrap
+            padding: 0 16px
+    .filters
+        &__wrap
+            padding: 0 16px
+            margin: 24px 0 40px 
+            justify-content: space-between            
+        &__right
+            margin-right: 0
+            
+                
+            &_title
+                font-size: 12px
+                line-height: 14px
+                margin: 0  9px 0 24px
+    .catalog
+        &__list
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 16px
+            padding: 0 16px
+    .card:nth-child(3)
+        display: none
+            
     .offer
         grid-template-rows: 167px 116px
         grid-gap: 19px
@@ -38,7 +69,9 @@
         &__button
             margin-top: 32px
     .services
-            padding: 48px 0 64px    
+            padding: 48px 0 64px  
+
+            
 @media  ( max-width: 376px  )
     .header
         &__menu
@@ -62,6 +95,28 @@
             &_huge
                 font-size: 38px
                 font-weight: 700
+    .new-arrivals
+        &__wrap
+           flex-direction: column
+           justify-content: space-evenly
+        &__title
+            margin: 0 
+    .filterLabel
+        display: none
+    .filterIcon
+        margin-left: 0
+    .filters__wrap
+        padding: 0 8px
+    .catalog
+        &__list
+            grid-template-columns: 1fr
+            grid-gap: 16px
+            padding: 0 8px
+        &__img
+            width: 342px
+    .card:nth-child(3)
+        display: none
+       
     .offer
         grid-template-columns: 1fr
         grid-template-rows: repeat(3,  247px) 111px

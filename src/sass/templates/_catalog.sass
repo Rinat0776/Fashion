@@ -1,0 +1,37 @@
+.catalog
+    &__list
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 30px
+    &__img
+        background: url("../img/image.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width: 360px
+        height: 420px
+    &__pagination
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 283px
+        height: 44px
+        margin: 0 auto
+        margin-top: 40px
+        border: 1px solid #EBEBEB
+        border-radius: 3px
+        padding: 15px 16px
+    &__chevron
+        width: 8px
+        height: 14px
+        cursor: pointer
+    &__link
+        font-size: 16px
+        line-height: 19px
+        color: $pagination
+        text-decoration: none
+        &:hover
+            color: $category
+        
+       
+        
