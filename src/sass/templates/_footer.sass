@@ -10,15 +10,27 @@
         line-height: 19px
         color: $light-text
     &__social
-        margin-left: 215px
-    &__icon
-        width: 31px
-        height: 32px
-        margin-right: 3px
-        &::hover
-            color: $red-text
+        display: flex
+        margin-left: 215px    
     &__link
+        display: flex
+        justify-content: center
+        align-items: center
         text-decoration: none
+        margin-right: 3px
+        width: 32px
+        height: 32px
+        background-color: #fff
+        &:hover
+            background-color: $red-text 
+    &__icon
+        fill: $black
+        &:hover
+            fill: #fff
+            
+       
+       
+        
         
         
 
