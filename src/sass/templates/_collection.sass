@@ -1,0 +1,95 @@
+.collection
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    background-color: $light
+    border: 1px solid #EAEAEA
+    margin-top: -75px
+    position: relative
+    z-index: 1
+    &__title
+        font-size: 14px
+        line-height: 17px
+        letter-spacing: 1px
+        margin-top: 65px
+        margin-bottom: 0
+        position: relative
+        color: $red-text
+        +light
+        &::after
+            content: " "
+            width: 63px
+            height: 3px
+            position: absolute
+            top: 28px
+            left: 51px
+            background-color: $category
+    &__subtitle
+        font-size: 18px
+        line-height: 22px
+        margin-top: 27px
+        color: #4d4d4d
+        +regular
+    &__description
+        max-width: 574px
+        font-size: 14px
+        line-height: 18px
+        color: $darkgrey-text
+        text-align: center
+        margin-top: 48px
+        +light
+    &__cost
+        font-size: 24px
+        line-height: 28px
+        color: $category
+        margin-top: 32px
+        +light
+    &__dropdown
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        margin: 129px 0 65px
+        &::before
+            content: " "
+            display: flex
+            width: 642px
+            position: absolute
+            bottom: 80px
+            right: -108px
+            height: 1px
+            background-color: #EAEAEA
+        &_title
+            font-size: 14px
+            line-height: 17px
+            color: $filters-color
+            font-weight: 400
+            +regular
+        &_img
+            width: 10px
+            height: 5px
+            margin-left: 9px
+            margin-right: 23px
+            cursor: pointer
+    &__button
+        margin-bottom: 65px
+        font-size: 16px
+        line-height: 20px
+        color: $category
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 15px  57px 9px 24px
+        background-color: #fff
+        border: 1px solid #FF6A6A
+        font-weight: 400
+        cursor: pointer
+        outline: none
+        +regular
+        &_cart
+            width: 26px
+            height: 24px
+            margin-right: 22px
+            
+

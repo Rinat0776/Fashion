@@ -13,7 +13,7 @@ menuClose.addEventListener('click', toggleMenu);
 
  var myswiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 5,
       loop: true,
       
       navigation: {
