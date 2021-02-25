@@ -614,10 +614,6 @@ img {
 
 .swiper-container {
   width: 100%;
-<<<<<<< HEAD
-=======
-  height: 100%;
->>>>>>> a2a03409ee64c6e75d4c4da13368516cd661dc55
   height: 777px;
   background-color: #F7F7F7; }
 
@@ -750,6 +746,14 @@ img {
         line-height: 53px; }
   .new-arrivals__wrap {
     padding: 0 16px; }
+  .swiper-container {
+    height: 624px; }
+  .swiper-slide {
+    height: 624px; }
+    .swiper-slide__img {
+      width: 466px;
+      height: 565px;
+      margin: 30px 0; }
   .filters__wrap {
     padding: 0 16px;
     margin: 24px 0 40px;
@@ -813,6 +817,15 @@ img {
     margin-left: 0; }
   .filters__wrap {
     padding: 0 8px; }
+  .swiper-container {
+    height: 624px; }
+  .swiper-slide {
+    width: 375px;
+    height: 624px; }
+    .swiper-slide__img {
+      width: 374px;
+      height: 454px;
+      margin: 85px 0; }
   .catalog__list {
     grid-template-columns: 1fr;
     grid-gap: 16px;
