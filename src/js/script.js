@@ -1,4 +1,3 @@
-'use strict';
 
 let modal = document.querySelector('.modal');
 let headerBars = document.querySelector('.header__bars');
@@ -11,7 +10,9 @@ function toggleMenu() {
 headerBars.addEventListener('click', toggleMenu);
 menuClose.addEventListener('click', toggleMenu);
 
- var myswiper = new Swiper('.swiper-container', {
+$(document).ready(function () {
+  
+ var mySwiper  = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 5,
       loop: true,
@@ -21,24 +22,6 @@ menuClose.addEventListener('click', toggleMenu);
         prevEl: '.swiper-button-prev',
       },
     });
-//Валидация 
-// $(function(){
-//     $('.subscribe__input').validate({
-//   rules: {
-//    userEmail: {
-//             required: true,
-//             email: true
-//          }
-//   },
-//      errorElement: "div",
-//      errorClass: "invalidSubscribe",
-//   messages: {
-//   userEmail: {
-//  required: "Поле 'Email' обязательно к заполнению",
-//  email: "Введите корректный email"
-//  },
-//   }
-//  });
-// }); 
+});
 
     

@@ -50,6 +50,20 @@ img {
   max-width: 1140px;
   margin: 0 auto; }
 
+.input-group {
+  position: relative; }
+
+input.invalidSubscribe {
+  border: 1px solid  tomato; }
+
+div.invalidSubscribe {
+  color: tomato;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  width: 100%;
+  text-align: center; }
+
 .header {
   background: #222224; }
   .header__menu {
@@ -384,7 +398,7 @@ img {
     height: 49px;
     border-radius: 50px 0 0 50px;
     outline: none;
-    border: none;
+    border: 1px solid #c4c4c4;
     background-color: #E1E1E1;
     margin-right: -4px; }
     .subscribe__input::placeholder {
