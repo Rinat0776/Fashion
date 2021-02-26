@@ -320,19 +320,20 @@ div.invalidSubscribe {
     font-family: 'Lato-Refular' , sans-serif; }
 
 .services {
-  display: grid;
   background-color: #222224;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 360px));
-  justify-self: center;
-  justify-content: center;
-  grid-gap: 40px;
-  margin: 90px 0 0;
-  padding: 104px 0; }
-  .services__box {
+  margin-top: 95px; }
+  .services__item {
     display: grid;
-    justify-items: center;
-    text-align: center;
-    align-content: center; }
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    justify-content: center;
+    grid-gap: 30px;
+    padding: 104px 0; }
+  .services__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
   .services__img {
     width: 44px;
     height: 40px; }
@@ -346,26 +347,29 @@ div.invalidSubscribe {
     font-size: 14px;
     line-height: 17px;
     color: #FBFBFB;
-    width: 300px;
-    margin: 0; }
+    margin: 0;
+    width: 320px;
+    font-family: 'Lato-Light', serif; }
 
 .subscribe {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 567px));
-  grid-auto-rows: 1fr;
   background: url("../img/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   justify-self: center;
   justify-content: center;
-  box-shadow: inset 0px 244px 22px 1px rgba(255, 255, 255, 0.7), inset 0px 530px 0px 0px rgba(244, 244, 244, 0.7);
+  box-shadow: inset 0 244px 22px 1px rgba(255, 255, 255, 0.7), inset 0 530px 0 0 rgba(244, 244, 244, 0.7);
   height: 529px; }
+  .subscribe__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 97px 5px 126px; }
   .subscribe__box {
-    display: grid;
-    justify-items: center;
-    text-align: center;
-    align-content: center;
-    margin-bottom: 100px; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; }
   .subscribe__img {
     width: 150px;
     height: 150px; }
@@ -378,19 +382,21 @@ div.invalidSubscribe {
     .subscribe__description_italic {
       font-family: 'Lato-Italic', sans-serif; }
   .subscribe__form {
-    display: grid;
-    justify-items: center;
-    text-align: center;
-    align-content: center; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center; }
   .subscribe__title {
     font-size: 24px;
-    line-height: 40px;
+    color: #222224;
     text-transform: uppercase;
     font-family: 'Lato-Bold', sans-serif; }
   .subscribe__subtitle {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 32px;
+    color: #222224;
+    margin-bottom: 25px;
     text-transform: uppercase;
     font-family: 'Lato-Refular' , sans-serif; }
   .subscribe__input {
@@ -415,7 +421,7 @@ div.invalidSubscribe {
     outline: none;
     border: none;
     background-color: #F16D7F;
-    border-radius: 0px 50px  50px 0; }
+    border-radius: 0 50px  50px 0; }
   .subscribe__social {
     display: grid;
     background-color: #222224;
@@ -834,8 +840,8 @@ div.invalidSubscribe {
 @media (max-width: 1124px) {
   .header__menu {
     padding: 18px 20px; }
-  .services {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 530px)); }
+  .services__item {
+    grid-template-columns: repeat(3, 1fr); }
   .new-arrivals__wrap {
     padding: 0 16px; }
   .filters__wrap {
@@ -910,7 +916,18 @@ div.invalidSubscribe {
   .products__button {
     margin-top: 32px; }
   .services {
-    padding: 48px 0 64px; } }
+    margin-top: 64px; }
+    .services__item {
+      grid-template-columns: 1fr;
+      grid-gap: 48px;
+      padding: 48px 0 64px; }
+  .subscribe {
+    padding: 0; }
+    .subscribe__item {
+      flex-direction: column;
+      padding: 63px 5px 120px; }
+    .subscribe__box {
+      margin-bottom: 48px; } }
 
 @media (max-width: 376px) {
   .header__menu {
@@ -997,17 +1014,26 @@ div.invalidSubscribe {
     padding: 0 8px; }
   .products__button {
     margin-top: 41px; }
-  .subscribe {
-    grid-template-columns: 1fr; }
-    .subscribe__description {
-      font-size: 18px; }
-    .subscribe__subtitle {
-      font-size: 14px; }
-    .subscribe__input {
-      width: 220px;
-      height: 45px; }
-    .subscribe__submit {
-      padding: 15px 23px; }
+  .services {
+    margin-top: 96px; }
+    .services__item {
+      grid-template-columns: 1fr;
+      grid-gap: 46px;
+      padding: 48px 0 81px; }
+  .subscribe__item {
+    flex-direction: column;
+    padding: 64px 5px 110px; }
+  .subscribe__box {
+    margin-bottom: 58px; }
+  .subscribe__description {
+    font-size: 18px; }
+  .subscribe__subtitle {
+    font-size: 14px; }
+  .subscribe__input {
+    width: 220px;
+    height: 45px; }
+  .subscribe__submit {
+    padding: 15px 23px; }
   .footer__wrap {
     flex-direction: column-reverse;
     justify-content: center;

@@ -3,7 +3,8 @@
         &__menu
             padding: 18px 20px
     .services
-        grid-template-columns: repeat(auto-fill, minmax(200px, 530px))
+        &__item
+            grid-template-columns: repeat(3, 1fr)
     .new-arrivals
         &__wrap
             padding: 0 16px
@@ -73,8 +74,7 @@
             padding: 0 16px
         &__card
             &_3
-                display: none
-    
+                display: none   
     .offer
         grid-template-rows: 167px 116px
         grid-gap: 19px
@@ -87,12 +87,20 @@
             grid-gap: 14px
             padding: 0 18px
         &__button
-            margin-top: 32px
-    
-    .services
-            padding: 48px 0 64px  
-
-            
+            margin-top: 32px    
+    .services 
+        margin-top: 64px
+        &__item
+            grid-template-columns: 1fr
+            grid-gap: 48px
+            padding: 48px 0 64px 
+    .subscribe
+        padding: 0
+        &__item
+            flex-direction: column
+            padding: 63px 5px 120px
+        &__box
+            margin-bottom: 48px
 @media  ( max-width: 376px  )
     .header
         &__menu
@@ -138,8 +146,7 @@
             &__img
                 width: 374px
                 height: 454px
-                margin: 85px 0
-    
+                margin: 85px 0 
     .collection
         &__description
             line-height: 20px
@@ -189,8 +196,18 @@
             padding: 0 8px
         &__button
             margin-top: 41px
+    .services 
+        margin-top: 96px
+        &__item
+            grid-template-columns: 1fr
+            grid-gap: 46px
+            padding: 48px 0 81px 
     .subscribe
-        grid-template-columns: 1fr
+        &__item
+            flex-direction: column
+            padding: 64px 5px 110px
+        &__box
+            margin-bottom: 58px
         &__description
             font-size: 18px
         &__subtitle
