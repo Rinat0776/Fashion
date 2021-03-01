@@ -1,0 +1,165 @@
+.purchase
+    &__wrap
+        display: flex
+        justify-content: space-between     
+        margin-top: 96px
+    &__cart
+        display: flex
+        &_left
+            flex-direction: column
+            flex-basis: 50%
+        &_right
+            flex-basis: 30%
+            flex-direction: column
+    &__box
+        width: 652px
+        position: relative
+        display: flex
+        background-color: $light
+        filter: drop-shadow(8px 8px 21px rgba(0, 0, 0, 0.13 ))
+        margin-bottom: 40px
+        animation-name: spaceOutUp
+        animation-duration:  1s
+    &__title
+            width: 220px
+            font-size: 24px
+            line-height: 29px
+            color: $menu-color
+            margin-bottom: 42px
+            +regular
+            &_right
+                font-size: 16px
+                line-height: 19px
+                color: $menu-color
+                font-weight: 300
+                margin: 0
+                margin-bottom: 20px
+                +light
+    &__address
+        animation-name: spaceOutUp
+        animation-duration:  500ms
+    &__input
+            width: 44px
+            height: 25px
+            text-align: center
+            margin-left: 24px
+            &_right
+                width: 100%
+                padding: 15px 17px
+                margin-bottom: 20px
+                border: 1px solid $border-button
+                font-size: 13px
+                line-height: 16px
+                color: $placeholder
+                padding-left: 17px
+                +light
+                &::last-of-type   
+                    margin-bottom: 23px
+    &__desc
+            font-size: 22px
+            line-height: 26px
+            color: $desc
+            margin-bottom: 6px
+            +regular
+    &__cost
+            color: $category
+    &__close
+            position: absolute
+            top: 22px
+            right: 28px
+            width: 18px
+            height: 18px
+            cursor: pointer
+    &__img
+        width: 262px
+        height: 306px
+        &_bg
+            background: url("../img/image.png")
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            width: 262px
+            height: 306px
+    &__inner
+        display: flex
+        flex-direction: column
+        width: 262px
+        margin-top: 22px
+        margin-left: 31px
+    &__btn 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 72px 0 128px
+    &__button
+        border: 1px solid $border-button
+        background-color: $light
+        font-size: 14px 
+        line-height: 16px
+        color: $dark-text
+        padding: 16px 40px
+        outline: none
+        cursor: pointer
+        &_small
+            display: block
+            font-size: 11px
+            line-height: 13px
+            color: $border-button
+            padding: 11px 15px
+            background-color: $light
+            border: 1px solid $border-button
+            cursor: pointer
+            outline: none
+            +light
+        &_red
+            font-size: 16px
+            line-height: 19px
+            color: $light
+            padding: 16px 42px
+            background-color:  $red-text
+            border: none
+            outline: none
+            cursor: pointer
+            +regular
+.checkout
+    position: relative
+    width: 360px
+    height: 214px
+    text-align: center
+    background-color: $chekcout
+    margin-top: 57px
+    animation-name: spaceOutUp
+    animation-duration:  500ms
+   
+    &__price
+        text-align: right
+    &__title
+        font-size: 11px
+        line-height: 13px
+        color: $border-button
+        display: block
+        margin: 39px 34px 12px 0
+        +regular
+        &_large
+            font-size: 16px
+            line-height: 19px
+            color: $menu-color
+            margin: 0 37px 39px
+            +light
+    &__cost
+        &_red
+            color: $red-text
+            margin-left: 20px
+            +bold
+@keyframes spaceOutUp
+    from 
+     opacity: 0
+     transform-origin: 50% 0%
+     transform: scale(.2) translate(0%, -200%)
+    
+    to 
+     opacity: 1
+     transform-origin: 50% 0%
+     transform: scale(1) translate(0%, 0%)
+    
+   

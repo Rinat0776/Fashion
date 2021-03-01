@@ -26,5 +26,36 @@ $(document).ready(function () {
             }
         }
     });
-
+$(".purchase__form").validate({
+    rules:{
+        userCountry: {
+            required: true,
+            minlength: 2,
+        },
+        userRegion:{
+            required: true,
+            minlength: 2,
+        },
+        userPostcode: {
+            required: true,
+            minlength: 6,
+        }
+    },
+      errorElement: "div",
+     errorClass: "invalidPurchase",
+     messages:{
+         userCountry:{
+             required: "Заполните поле ",
+             minlength: "Название  не короче двух букв"
+         },
+          userRegion: {
+              required: "Заполните поле ",
+              minlength: "Название  не короче двух букв"
+          },
+            userPostcode: {
+                required: "Индекс  обязательно",
+                minlength: " Не короче шести цифр"
+            }
+     }
+});
 });
