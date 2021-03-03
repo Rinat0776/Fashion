@@ -1,0 +1,91 @@
+.registration
+    &__wrap
+        display: flex
+        justify-content: space-between
+        margin-top: 64px
+    &__personalInfo
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: start
+        flex-basis: 35%
+    &__aside
+        display: flex
+        flex-direction: column
+        flex-basis: 55%
+        font-size: 24px
+        line-height: 29px
+        margin-top: 0
+        color: $dark-text
+        +light
+    &__title     
+        margin: 0
+    &__description
+        margin: 22px 0
+        max-width: 100%
+    &__list
+        margin-top: 0
+        list-style-type: none
+    &__item
+        position: relative
+        margin-bottom: 16px
+        &::before
+            content: " "
+            background: url("../img/checkmark.svg")
+            background-repeat: no-repeat
+            height: 16px
+            width: 20px
+            position: absolute
+            top: 6px
+            left: -35px
+            display: flex
+
+            
+
+.personalInfo
+    &__label
+        display: block
+        font-size: 16px
+        line-height: 19px
+        color: $menu-color
+        margin-bottom: 20px
+        +light
+    &__input
+        width: 360px
+        padding: 14px 0 15px 17px
+        font-size: 13px
+        line-height: 16px
+        border: 1px solid $border-button
+        margin-bottom: 20px
+        +light
+        &:nth-child(2n+1)
+            margin-bottom: 0    
+    &__radio
+        width: 17px
+        height: 17px
+        margin: 31px 20px 33px 10px
+        &:nth-of-type(1)
+            margin-left: 0   
+    &__gender
+        font-size: 11px
+        line-height: 13px
+        color: $dark-text
+        display: inline-block         
+    &__text
+        width: 360px
+        font-size: 13px
+        line-height: 16px
+        color: $placeholder
+        margin: 15px 0 39px
+        +light
+    &__button
+        font-size: 14px
+        line-height: 17px
+        color: $light
+        background-color: $red-text
+        padding: 17px 29px
+        margin-bottom: 96px
+    &__arrow
+        width: 17px
+        height: 10px
+        margin-left: 20px
