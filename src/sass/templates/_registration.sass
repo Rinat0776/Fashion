@@ -39,9 +39,6 @@
             top: 6px
             left: -35px
             display: flex
-
-            
-
 .personalInfo
     &__label
         display: block
@@ -57,6 +54,7 @@
         line-height: 16px
         border: 1px solid $border-button
         margin-bottom: 20px
+        outline: none
         +light
         &:nth-child(2n+1)
             margin-bottom: 0    
@@ -65,12 +63,16 @@
         height: 17px
         margin: 31px 20px 33px 10px
         &:nth-of-type(1)
-            margin-left: 0   
+            margin-left: 0  
+        &:nth-of-type(3) 
+            display: none
     &__gender
         font-size: 11px
         line-height: 13px
         color: $dark-text
-        display: inline-block         
+        display: inline-block  
+        &:nth-of-type(3) 
+            display: none       
     &__text
         width: 360px
         font-size: 13px
@@ -82,9 +84,12 @@
         font-size: 14px
         line-height: 17px
         color: $light
+        outline: none
+        border: none
         background-color: $red-text
         padding: 17px 29px
         margin-bottom: 96px
+        cursor: pointer
     &__arrow
         width: 17px
         height: 10px

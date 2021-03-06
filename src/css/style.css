@@ -75,6 +75,18 @@ div.invalidPurchase {
   width: 100%;
   text-align: center; }
 
+input.invalidPersonalInfo {
+  border: 1px solid  tomato; }
+
+div.invalidPersonalInfo {
+  color: tomato;
+  font-size: 12px;
+  position: absolute;
+  bottom: 23px;
+  left: 8px;
+  width: 100%;
+  text-align: center; }
+
 .header {
   background: #222224; }
   .header__menu {
@@ -1049,6 +1061,7 @@ div.invalidPurchase {
   line-height: 16px;
   border: 1px solid #a4a4a4;
   margin-bottom: 20px;
+  outline: none;
   font-family: 'Lato-Light', serif; }
   .personalInfo__input:nth-child(2n+1) {
     margin-bottom: 0; }
@@ -1059,12 +1072,16 @@ div.invalidPurchase {
   margin: 31px 20px 33px 10px; }
   .personalInfo__radio:nth-of-type(1) {
     margin-left: 0; }
+  .personalInfo__radio:nth-of-type(3) {
+    display: none; }
 
 .personalInfo__gender {
   font-size: 11px;
   line-height: 13px;
   color: #000000;
   display: inline-block; }
+  .personalInfo__gender:nth-of-type(3) {
+    display: none; }
 
 .personalInfo__text {
   width: 360px;
@@ -1078,9 +1095,12 @@ div.invalidPurchase {
   font-size: 14px;
   line-height: 17px;
   color: #fff;
+  outline: none;
+  border: none;
   background-color: #F16D7F;
   padding: 17px 29px;
-  margin-bottom: 96px; }
+  margin-bottom: 96px;
+  cursor: pointer; }
 
 .personalInfo__arrow {
   width: 17px;
@@ -1138,7 +1158,7 @@ div.invalidPurchase {
     margin-left: 21px;
     cursor: pointer; }
 
-@media (max-width: 1124px) {
+@media (max-width: 1140px) {
   .header__menu {
     padding: 18px 20px; }
   .services__item {
@@ -1150,6 +1170,8 @@ div.invalidPurchase {
   .filters__right {
     margin-right: 250px; }
   .shopping {
+    padding: 0 10px; }
+  .registration__wrap {
     padding: 0 10px; }
   .purchase__wrap {
     padding: 0 10px; }
@@ -1266,6 +1288,20 @@ div.invalidPurchase {
   .checkout {
     margin-left: 7px;
     margin-top: 39px; }
+  .registration__wrap {
+    padding: 0 16px; }
+  .registration__personalInfo {
+    flex-basis: 50%; }
+  .registration__aside {
+    font-size: 16px;
+    line-height: 22px;
+    flex-basis: 48%; }
+  .registration__description {
+    margin: 32px 0 22px; }
+  .personalInfo__radio:nth-of-type(3) {
+    display: inline-block; }
+  .personalInfo__gender:nth-of-type(3) {
+    display: inline-block; }
   .subscribe {
     padding: 0; }
     .subscribe__item {
@@ -1302,6 +1338,16 @@ div.invalidPurchase {
     grid-gap: 12px; }
   .footer__copy {
     font-size: 10px; }
+  .registration__wrap {
+    flex-direction: column; }
+  .registration__personalInfo {
+    width: 100%; }
+  .personalInfo__form {
+    width: 100%; }
+  .personalInfo__input {
+    width: 100%; }
+  .personalInfo__text {
+    width: 100%; }
   .purchase__close {
     top: 11px;
     right: 7px;

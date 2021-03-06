@@ -1,4 +1,4 @@
-@media  ( max-width: 1124px  )
+@media  ( max-width: 1140px  )
     .header
         &__menu
             padding: 18px 20px
@@ -15,6 +15,9 @@
             margin-right: 250px
     .shopping
         padding: 0 10px
+    .registration
+        &__wrap
+            padding: 0 10px
     .purchase
         &__wrap
             padding: 0 10px
@@ -147,7 +150,24 @@
     .checkout
         margin-left: 7px
         margin-top: 39px
-       
+    .registration
+        &__wrap
+            padding: 0 16px
+        &__personalInfo
+            flex-basis: 50%
+        &__aside
+            font-size: 16px
+            line-height: 22px
+            flex-basis: 48%
+        &__description
+            margin: 32px 0 22px   
+    .personalInfo
+        &__radio
+            &:nth-of-type(3) 
+                display: inline-block  
+        &__gender
+            &:nth-of-type(3) 
+                display: inline-block    
     .subscribe
         padding: 0
         &__item
@@ -188,6 +208,18 @@
     .footer
         &__copy
             font-size: 10px
+    .registration
+        &__wrap
+            flex-direction: column
+        &__personalInfo
+            width: 100%
+    .personalInfo
+        &__form
+            width: 100%
+        &__input
+            width: 100%
+        &__text
+            width: 100%
     .purchase
         &__close
             top: 11px
