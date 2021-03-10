@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Fashion</title>
 </head>
@@ -20,7 +19,7 @@
                     </a>
                     <!-- /.header__logo -->
                     <div class="header__search">
-                        <input type="image" src="./img/search.svg" />
+                        <input type="image" src="./img/search.svg" alt="search" />
                     </div>
                     <!-- /.header__search -->
                 </div>
@@ -61,8 +60,8 @@
                 <div class="registration__personalInfo personalInfo ">
                     <form action="#" class="personalInfo__form">
                         <div class="input-group">
-                            <label for="#" class="personalInfo__label">Your Name</label>
-                            <!-- /.registration__label -->
+                            <label class="personalInfo__label">Your Name</label>
+                            <!-- /.personalInfo__label -->
                             <input type="text" name="userFirstName" class="personalInfo__input"
                                 placeholder="First Name">
                         </div>
@@ -75,11 +74,11 @@
                             class="personalInfo__gender"> Male</span>
                         <input type="radio" name="gender" class="personalInfo__radio" value="female"><span
                             class="personalInfo__gender">Female</span>
-                            <input type="radio" name="gender" class="personalInfo__radio" value="other"><span
-                                class="personalInfo__gender">Other</span>
+                        <input type="radio" name="gender" class="personalInfo__radio" value="other"><span
+                            class="personalInfo__gender">Other</span>
                         <div class="input-group">
-                            <label for="#" class="personalInfo__label">Login details</label>
-                            <!-- /.registration__label -->
+                            <label class="personalInfo__label">Login details</label>
+                            <!-- /.personalInfo__label -->
                             <input type="text" name="userEmail" class="personalInfo__input" placeholder="Email">
                         </div>
                         <!-- /.input-group -->
@@ -87,14 +86,15 @@
                             <input type="text" name="userPassword" class="personalInfo__input" placeholder="Password">
                         </div>
                         <!-- /.input-group -->
-                    <p class="personalInfo__text">Please use 8 or more characters, with at least 1 number and a mixture
-                        of uppercase and lowercase letters</p>
-                    <!-- /.personalInfo__text -->
-                    <button type="submit" class="personalInfo__button">JOIN NOW <img src="./img/button-arrow.svg"
-                            class="personalInfo__arrow" alt="arrow"></button>
-                    <!-- /.personalInfo__button -->
-                      </form>
-                      <!-- /.registration__form -->
+                        <p class="personalInfo__text">Please use 8 or more characters, with at least 1 number and a
+                            mixture
+                            of uppercase and lowercase letters</p>
+                        <!-- /.personalInfo__text -->
+                        <button type="submit" class="personalInfo__button">JOIN NOW <img src="./img/button-arrow.svg"
+                                class="personalInfo__arrow" alt="arrow"></button>
+                        <!-- /.personalInfo__button -->
+                    </form>
+                    <!-- /.registration__form -->
                 </div>
                 <!-- /.registration__personalInfo -->
                 <div class="registration__aside">
@@ -125,9 +125,8 @@
         <section class="subscribe">
             <div class="container">
                 <div class="subscribe__item">
-
                     <div class="subscribe__box">
-                        <img src="./img/layer-40.png" class="subscribe__img" alt=" layer">
+                        <img src="./img/layer-8.jpg" class="subscribe__img" alt=" layer">
                         <!-- /.subscribe__img -->
                         <p class="subscribe__description"> “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
                             <span class="subscribe__description_italic">a pulvinar purus condimentum“</span>
@@ -160,12 +159,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrap">
-                <p class="footer__copy">&#169;2021 Brand All Rights Reserved.</p>
+                <p class="footer__copy">&copy; 2021 Brand All Rights Reserved.</p>
                 <!-- /.footer__copy -->
                 <div class="footer__social">
                     <a href="#" class="footer__link">
                         <svg class="footer__icon" width="10" height="16" viewBox="0 0 10 16" fill="none"
-                            background-color="#fff" xmlns="http://www.w3.org/2000/svg">
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15847 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z" />
                         </svg>
@@ -225,7 +224,6 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/validate.js"></script>

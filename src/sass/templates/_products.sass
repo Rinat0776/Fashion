@@ -1,17 +1,20 @@
 .products
     &-title  
-        margin-bottom: 48px
+        margin-bottom: 43px
         text-align: center
     &__title   
         font-size: 30px
         line-height: 36px
+        font-weight: 400
         margin: 0
         color: $menu-color
         +regular
     &__subtitle
         font-size: 14px
-        line-height: 17px
-        color: $darkgrey-text
+        line-height: 23px
+        font-weight: 400
+        padding-right: 7px
+        color: #9f9f9f
         margin: 0
         +regular
     &__button
@@ -19,10 +22,10 @@
         text-align: center
         display: flex
         margin: 0 auto
-        margin-top: 48px
+        margin-top: 54px
         font-size: 16px
         line-height: 20px
-        padding: 15px 39px
+        padding: 13px 38px
         border: 1px solid $red-text
         color: $red-text
         cursor: pointer
@@ -38,7 +41,7 @@
         justify-self: center
         justify-content: center
         grid-gap: 30px
-        padding: 0 5px
+        
 .card
     display: grid
     text-align: left 
@@ -73,28 +76,37 @@
         font-size: 14px
         +regular
     &__inner
-        margin: 20px
+        padding:  20px 20px 20px 16px
     &__title
         text-transform: uppercase
-        margin-top: 0
+        margin-top: 7px
         font-size: 13px
-        line-height: 16px
+        letter-spacing: -0.3px
+        line-height: 15.6px
         color: $dark-text
+        font-weight: 400
         +regular  
     &__description
         font-size: 14px
+        width: 320px
         line-height: 17px
         color: $darkgrey-text
-        +regular
+        font-weight: 300
+        +light
     &__img
         width: 100%
         height:  420px
         object-fit: cover
+        position: relative
+        top: 2px
         display: block
     &__cost
         font-size: 16px
         line-height: 19px
         color: $red-text
+        position: relative
+        top: 5px
+        left: 3px
         +regular
        
 

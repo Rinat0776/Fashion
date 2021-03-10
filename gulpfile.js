@@ -1,6 +1,7 @@
 const { src, dest, watch, series } = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Save a reference to the `reload` method
 
@@ -18,10 +19,16 @@ const sass = require('gulp-sass');
     watch("./src/scss/**/*.scss", serveSass);
     watch("./src/js/*.js").on("change", browserSync.reload);
   };
+
+
   function serveSass () {
   return src("./src/sass/*.sass")
     .pipe(sass())
+    .pipe(autoprefixer({
+      cascade: false
+    }))
     .pipe(dest("src/css"))
     .pipe(browserSync.stream());
 };
+
     exports.serve = bs;
